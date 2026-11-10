@@ -4,6 +4,10 @@ EduVerse is a modern and responsive online learning platform designed to help le
 
 The project focuses on providing a clean, user-friendly interface with interactive features and a responsive design that works across desktop, tablet, and mobile devices.
 
+## Live Demo
+
+Check out the live website: [EduVerse Live Demo](https://razanhali.github.io/EduVerse/)
+
 ## Features
 
 - **Responsive Design:** Optimized for desktop, tablet, and mobile screens.
