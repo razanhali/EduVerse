@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduVerse | Courses</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+   
+<header>
+    <div class="container">
+
+        <h2 class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            EduVerse
+        </h2>
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-buttons">
+
+            <button id="darkMode" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button id="menuBtn">
+    <i class="fa-solid fa-bars"></i>
+</button>
+
+        </div>
+
+    </div>
+</header>
+
+
+    <!-- Courses Section -->
+    <section class="courses" style="padding-top:150px;">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="subtitle">All Courses</span>
+
+                <h2>Explore Our Courses</h2>
+
+                <p>
+                    Choose the best course and improve your skills.
+                </p>
+
+            </div>
+
+
+            <!-- Search & Filters -->
+            <div class="search-box">
+
+                <div class="input-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search your favorite course...">
+                </div>
+
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="Programming">Programming</option>
+                    <option value="UI/UX">UI/UX</option>
+                    <option value="Artificial Intelligence">Artificial Intelligence</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Mobile Development">Mobile Development</option>
+                </select>
+
+                <select id="levelFilter">
+                    <option value="all">All Levels</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- Results Count -->
+            <p id="resultsCount" style="margin: 20px 0;">
+                Showing 6 courses
+            </p>
+
+
+            <!-- Courses Grid -->
+            <div class="courses-grid" id="coursesGrid">
+
+
+                <!-- Course 1 -->
+                <div class="course-card"
+                    data-category="Programming"
+                    data-level="Beginner">
+
+                    <div class="course-image">
+
+                        <img src="asestes/IMAGES/web.jpg"
+                            alt="Web Development">
+
+                        <span class="level">Beginner</span>
+
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">Programming</span>
+
+                        <h3>Complete Web Development Bootcamp</h3>
+
+                        <p class="instructor">
+                            <i class="fa-solid fa-user"></i>
+                            John Smith
+                        </p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐ <span>(4.9)</span>
+                        </div>
+
+                        <div class="course-info">
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                8 Weeks
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-users"></i>
+                                1500
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <h3>$49</h3>
+
+                            <button class="enroll-btn">
+                                Enroll Now
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Course 2 -->
+                <div class="course-card"
+                    data-category="UI/UX"
+                    data-level="Intermediate">
+
+                    <div class="course-image">
+
+                        <img src="asestes/IMAGES/ui ux (1).jpg"
+                            alt="UI UX">
+
+                        <span class="level">Intermediate</span>
+
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">UI/UX</span>
+
+                        <h3>UI/UX Design Professional Course</h3>
+
+                        <p class="instructor">
+                            <i class="fa-solid fa-user"></i>
+                            Sara Lee
+                        </p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐ <span>(4.8)</span>
+                        </div>
+
+                        <div class="course-info">
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                6 Weeks
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-users"></i>
+                                900
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <h3>$39</h3>
+
+                            <button class="enroll-btn">
+                                Enroll Now
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Course 3 -->
+                <div class="course-card"
+                    data-category="Artificial Intelligence"
+                    data-level="Advanced">
+
+                    <div class="course-image">
+
+                        <img src="asestes/IMAGES/ai (1).jpg"
+                            alt="Artificial Intelligence">
+
+                        <span class="level">Advanced</span>
+
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Artificial Intelligence
+                        </span>
+
+                        <h3>Artificial Intelligence Masterclass</h3>
+
+                        <p class="instructor">
+                            <i class="fa-solid fa-user"></i>
+                            Noor Khan
+                        </p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐ <span>(5.0)</span>
+                        </div>
+
+                        <div class="course-info">
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                12 Weeks
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-users"></i>
+                                2000
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <h3>$79</h3>
+
+                            <button class="enroll-btn">
+                                Enroll Now
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Course 4 -->
+                <div class="course-card"
+                    data-category="Data Science"
+                    data-level="Intermediate">
+
+                    <div class="course-image">
+
+                        <img src="asestes/IMAGES/data (1).jpg"
+                            alt="Data Science">
+
+                        <span class="level">Intermediate</span>
+
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">Data Science</span>
+
+                        <h3>Data Science & Analytics Course</h3>
+
+                        <p class="instructor">
+                            <i class="fa-solid fa-user"></i>
+                            Maria Gomez
+                        </p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐ <span>(4.7)</span>
+                        </div>
+
+                        <div class="course-info">
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                10 Weeks
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-users"></i>
+                                1200
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <h3>$59</h3>
+
+                            <button class="enroll-btn">
+                                Enroll Now
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Course 5 -->
+                <div class="course-card"
+                    data-category="Marketing"
+                    data-level="Beginner">
+
+                    <div class="course-image">
+
+                        <img src="asestes/IMAGES/digital (1).jpg"
+                            alt="Digital Marketing">
+
+                        <span class="level">Beginner</span>
+
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">Marketing</span>
+
+                        <h3>Digital Marketing Mastery</h3>
+
+                        <p class="instructor">
+                            <i class="fa-solid fa-user"></i>
+                            Ahmed Ali
+                        </p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐ <span>(4.6)</span>
+                        </div>
+
+                        <div class="course-info">
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                7 Weeks
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-users"></i>
+                                850
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <h3>$45</h3>
+
+                            <button class="enroll-btn">
+                                Enroll Now
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Course 6 -->
+                <div class="course-card"
+                    data-category="Mobile Development"
+                    data-level="Advanced">
+
+                    <div class="course-image">
+
+                        <img src="asestes/IMAGES/images.jpg"
+                            alt="Mobile Development">
+
+                        <span class="level">Advanced</span>
+
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Mobile Development
+                        </span>
+
+                        <h3>Flutter Mobile App Development</h3>
+
+                        <p class="instructor">
+                            <i class="fa-solid fa-user"></i>
+                            David Brown
+                        </p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐ <span>(4.9)</span>
+                        </div>
+
+                        <div class="course-info">
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                14 Weeks
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-users"></i>
+                                1700
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <h3>$69</h3>
+
+                            <button class="enroll-btn">
+                                Enroll Now
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- No Results Message -->
+            <div id="noResults" style="display:none; text-align:center; padding:40px 0;">
+                <i class="fa-solid fa-book-open"
+                    style="font-size:40px; margin-bottom:15px;"></i>
+
+                <h3>No Courses Found</h3>
+
+                <p>Try changing your search or filters.</p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <script src="JS/main.js"></script>
+
+</body>
+</html>
